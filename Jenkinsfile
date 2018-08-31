@@ -4,8 +4,7 @@ pipeline {
         stage 'Clone'
             def scmVars = checkout([$class: 'GitSCM', 
                   branches: [[name: '*/${Branch}']], 
-                  userRemoteConfigs: [[credentialsId: credentials_Id, 
-                                       url: https://github.com/penpenpenpen/demo/]]])
+                  userRemoteConfigs: [[url: https://github.com/penpenpenpen/demo/]]])
         stage('Build') {            
             steps {                
                 sh 'go build'         
