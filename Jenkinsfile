@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage 'Clone'
+            def scmVars = checkout([$class: 'GitSCM', 
+                  branches: [[name: '*/${Branch}']], 
+                  userRemoteConfigs: [[credentialsId: credentials_Id, 
+                                       url: GIT_URL]]])
         stage('Build') {            
             steps {                
                 sh 'go build'         
