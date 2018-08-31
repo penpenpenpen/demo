@@ -1,4 +1,4 @@
-package main
+/*package main
 import (
     "fmt"
     "net/http"
@@ -13,4 +13,10 @@ func main() {
     if err != nil {
         log.Fatal("ListenAndServe: ", err)
     }
+}
+*/
+package main
+import "fmt"
+func main() {
+    fmt.Println("woqu")
 }
