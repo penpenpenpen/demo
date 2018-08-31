@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {            
             steps {                
-                echo 'Building'            
+                sh GOOS=linux GOARCH=amd64 go build .           
             }        
         }        
         stage('Test') {            
