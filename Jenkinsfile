@@ -5,7 +5,7 @@ pipeline {
             def scmVars = checkout([$class: 'GitSCM', 
                   branches: [[name: '*/${Branch}']], 
                   userRemoteConfigs: [[credentialsId: credentials_Id, 
-                                       url: GIT_URL]]])
+                                       url: https://github.com/penpenpenpen/demo/]]])
         stage('Build') {            
             steps {                
                 sh 'go build'         
