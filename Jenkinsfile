@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy - Staging') {            
             steps {                
-                sh './demo Staging'                
+                echo './demo Staging'                
                 echo './run-smoke-tests'            
             }        
         }        
