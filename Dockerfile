@@ -2,7 +2,7 @@ FROM ubuntu:latest
                                                                                              
 MAINTAINER chen.wu@yeepay.com                                                                
                                                                                              
-ADD https://github.com/penpenpenpen/demo /usr/local/                                                                             
+ADD /var/jenkins_home/ /usr/local/                                                                             
                                                                                              
 WORKDIR /usr/local/                                                                          
                                                                                              
