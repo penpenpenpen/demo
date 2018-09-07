@@ -6,4 +6,4 @@ ADD /var/jenkins_home/ /usr/local/
                                                                                              
 WORKDIR /usr/local/                                                                          
                                                                                              
-CMD["./jenkins"]  
+CMD["./demo"]  
