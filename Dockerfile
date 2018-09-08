@@ -2,7 +2,7 @@ FROM ubuntu:latest
                                                                                              
 MAINTAINER chen.wu@yeepay.com                                                                
                                                                                              
-ADD /var/jenkins_home/ /usr/local/                                                                             
+ADD demo /usr/local/                                                                             
                                                                                              
 WORKDIR /usr/local/                                                                          
                                                                                              
