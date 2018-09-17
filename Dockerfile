@@ -6,4 +6,4 @@ ADD demo /usr/local/
                                                                                              
 WORKDIR /usr/local/                                                                          
                                                                                              
-CMD["./demo"]  
+CMD ["./demo"]  
